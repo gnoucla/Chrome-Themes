@@ -3,7 +3,7 @@ For Google Chrome
 
 Forked from https://github.com/Patrick-Batenburg/GoogleChromeThemeCreationGuide
 
-Sample of manifest json file can be found in Patrick Bateburg's repo
+Sample of manifest json file can be found in [**Patrick Bateburg's**](https://github.com/Patrick-Batenburg/GoogleChromeThemeCreationGuide) repo
 
 # Table of Contents
 - [Manifest File Format](#manifest-file-format)
