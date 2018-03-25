@@ -1,0 +1,7 @@
+## Ignore perm files
+
+# User-specific files
+*.pem
+
+# User-specific folders/directories
+private key files/

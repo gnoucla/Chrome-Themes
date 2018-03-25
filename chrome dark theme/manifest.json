@@ -1,0 +1,43 @@
+{
+   "description": "An edited version of Dark Dev theme for Chrome",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png"
+   },
+   "manifest_version": 2,
+   "name": "Developer Edition Dark Edit",
+   "short_name": "DevEdtn Dark Edit",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 255, 255, 255 ],
+         "button_background": [ 57, 63, 76, 1 ],
+         "frame": [ 39, 43, 53 ],
+         "frame_inactive": [ 39, 43, 53 ],
+         "frame_incognito": [ 39, 43, 53 ],
+         "frame_incognito_inactive": [ 39, 43, 53 ],
+         "tab_background_text": [ 255, 255, 255 ],
+         "tab_text": [ 255, 255, 255 ],
+         "toolbar": [ 39, 43, 53 ],
+		     "ntp_background": [64, 69, 82],
+         "ntp_text": [ 255, 255, 255 ]
+      },
+      "images": {
+         "theme_frame": "images/theme_frame.png",
+         "theme_frame_inactive": "images/theme_frame_inactive.png",
+         "theme_tab_background": "images/theme_tab_background.png",
+         "theme_tab_background_incognito": "images/theme_frame_inactive.png",
+         "theme_toolbar": "images/theme_toolbar.png"
+      },
+      "tints": {
+         "background_tab": [ -1, -1, -1 ],
+         "buttons": [ 0, 0, 1 ],
+         "frame_inactive": [ -1, -1, -1 ],
+         "frame_incognito_inactive": [ -1, -1, -1 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0",
+   "_comment": "idk"
+}
