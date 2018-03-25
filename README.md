@@ -1,7 +1,10 @@
 # Theme Creation Guide
 For Google Chrome
+
 Forked from https://github.com/Patrick-Batenburg/GoogleChromeThemeCreationGuide
-  
+
+Sample of manifest json file can be found in Patrick Bateburg's repo
+
 # Table of Contents
 - [Manifest File Format](#manifest-file-format)
 - [Image dimensions](#image-dimensions)
@@ -29,7 +32,7 @@ Forked from https://github.com/Patrick-Batenburg/GoogleChromeThemeCreationGuide
       - [theme_tab_background_v](#theme_tab_background_v)
       - [theme_window_control_background](#theme_window_control_background)
     - [Color Elements](#color-elements-1)
-      - [bookmark_text](#bookmark_text) 
+      - [bookmark_text](#bookmark_text)
       - [button_background](#button_background)
       - [control_background](#control_background)
       - [frame](#frame)
@@ -293,14 +296,14 @@ This is similar to `"theme_frame_overlay"`, but will be displayed when the brows
 #### theme_ntp_attribution
 This is the image that is displayed at the bottom right corner of the new tab page. Google Chrome automatically puts a heading "Theme created by" and below that displays whatever image you give as `"theme_ntp_attribution"`.
 
-A good practice is to create a small png file enough for an aurthor name 
+A good practice is to create a small png file enough for an aurthor name
 (and contact if needed) with alpha transparency background. Making large and more color intense image will attract view, but will make the theme a bit heavier (the file size of the theme may increase with bigger png file) but it's your choice anyway.
 
 #### theme_tab_background_incognito
 This is an image, that represents the inactive tabs, in the incognito mode. Alternatively one can use the tinting `"background_tab"`, to effect inactive tabs in incognito mode, but there is a slight problem that some may want to avoid even if you tint the inactive tabs of the incognito window, the inactive tabs are made transparent (by default). Hence they'll show the area behind them. i.e. the frame. If you want to avoid this, you can include this image.
 
 #### theme_tab_background_v
-This is an image that serves to function as an alternative tab background 
+This is an image that serves to function as an alternative tab background
 when Google Chrome is used in Aero mode. v may stand for 'vista', etc.
 
 #### theme_window_control_background
@@ -310,7 +313,7 @@ If this image is not included, the control buttons assume the background color s
 
 ### Color Elements
 #### bookmark_text
-This is a color element that specifies the color of the text of bookmarks in the toolbar and the text for the download bar that appears at the bottom. 
+This is a color element that specifies the color of the text of bookmarks in the toolbar and the text for the download bar that appears at the bottom.
 **Note:** During a download, the text color indicating the number of MB downloaded is not configurable.
 
 #### button_background
@@ -367,14 +370,14 @@ This is a color element that specifies the color of the title text of the curren
 #### toolbar
 This is a color element that specifies the background color of the bookmarks bar, that is visible only in the new tab page, when you press the shortcut keys Ctrl+B or CMD+B. And it contains a 1px border whose color is defined by `"ntp_header"`. Also this element can contain an opacity value that effects transparency of this bar. Note that opacity value are float values that ranges from 0 to 1, 0 being fully transparent and 1 being fully opaque.
 
-The format to specify this element in the manifest.json file is : 
+The format to specify this element in the manifest.json file is :
 `"toolbar": [R, G, B, opacity]`
 E.g. `"toolbar": [25, 154, 154, 0.5]`
 
 Note that this element also specifies color value of the background for floating the status bar (in the bottom of page). It's found that using opacity values for this element makes the status bar transparent, but the text inside it will contain a opaque background of same color-hence area without the text will be transparent.
 
 ## Tint Elements
-The tint elements are used to assign color tints to certain elements of the browser area. The value of the tint is in floating values ranging from 0 to 1 and -1.0 means no change. 
+The tint elements are used to assign color tints to certain elements of the browser area. The value of the tint is in floating values ranging from 0 to 1 and -1.0 means no change.
 E.g, `"buttons": [0.3, 0.5, 0.5]` (the values range from 0 to 1, hence even 0.125 or 0.65 represent a color).
 
 Here the first value represents the hue value, for which 0 means red and 1 means red. The next is saturation value that lets you set vibrancy of the color, here 0 means completely desaturated and 1 means fully saturated. The next value is lightness/brightness value. Here 0 means least bright and 1 means most bright
@@ -401,9 +404,9 @@ This is a tint element,that specifies the color tint of the inactive tabs in inc
 #### ntp_background_alignment
 This is a property element, that is used to control the alignment property of the image element `"theme_ntp_background"`. The value for this element is entered as follows: `"ntp_background_alignment": "VALUE"`
 
-In the place of VALUE, you can enter either `"top"`, `"bottom"`, `"left"` or `"right"`. Further you can use combinations like `"top-left"`, `"bottom-right"`, etc… 
-The difference is that using only `"left"`, aligns the background image to the left center of the new tab page. While using 
-`"top-left"` aligns the image to the top left corner of the new tab page. 
+In the place of VALUE, you can enter either `"top"`, `"bottom"`, `"left"` or `"right"`. Further you can use combinations like `"top-left"`, `"bottom-right"`, etc…
+The difference is that using only `"left"`, aligns the background image to the left center of the new tab page. While using
+`"top-left"` aligns the image to the top left corner of the new tab page.
 E.g. `"ntp_background_alignment": "bottom-left"` (Note that the default alignment of the background image is `"center"`).
 
 #### ntp_background_repeat
